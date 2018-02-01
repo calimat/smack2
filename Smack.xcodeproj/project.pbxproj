@@ -15,6 +15,8 @@
 		F673BDAE2020140700C8B1BA /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F673BDAD2020140700C8B1BA /* ChatVC.swift */; };
 		F673BDB02020141700C8B1BA /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F673BDAF2020141700C8B1BA /* ChannelVC.swift */; };
 		F673BDB22022B60200C8B1BA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F673BDB12022B60200C8B1BA /* GradientView.swift */; };
+		F673BDB52022BE5E00C8B1BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F673BDB42022BE5E00C8B1BA /* Constants.swift */; };
+		F673BDB72022C1F500C8B1BA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F673BDB62022C1F500C8B1BA /* LoginVC.swift */; };
 		FB0D64B332DE74F865A8300A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE932A77C0B235296BBEA60 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		F673BDAD2020140700C8B1BA /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		F673BDAF2020141700C8B1BA /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		F673BDB12022B60200C8B1BA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F673BDB42022BE5E00C8B1BA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F673BDB62022C1F500C8B1BA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		F673BD9220200A1500C8B1BA /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				F673BDB32022BE4D00C8B1BA /* Utilities */,
 				F673BDAC202013E500C8B1BA /* Model */,
 				F673BDAB202013DD00C8B1BA /* View */,
 				F673BDAA202013D500C8B1BA /* Controller */,
@@ -114,6 +119,7 @@
 			children = (
 				F673BDAD2020140700C8B1BA /* ChatVC.swift */,
 				F673BDAF2020141700C8B1BA /* ChannelVC.swift */,
+				F673BDB62022C1F500C8B1BA /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +137,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F673BDB32022BE4D00C8B1BA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F673BDB42022BE5E00C8B1BA /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F673BDB02020141700C8B1BA /* ChannelVC.swift in Sources */,
+				F673BDB52022BE5E00C8B1BA /* Constants.swift in Sources */,
+				F673BDB72022C1F500C8B1BA /* LoginVC.swift in Sources */,
 				F673BDAE2020140700C8B1BA /* ChatVC.swift in Sources */,
 				F673BDB22022B60200C8B1BA /* GradientView.swift in Sources */,
 				F673BD9420200A1500C8B1BA /* AppDelegate.swift in Sources */,
