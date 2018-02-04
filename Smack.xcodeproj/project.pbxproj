@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F639EA7A2026B7D10096A679 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F639EA792026B7D10096A679 /* AuthService.swift */; };
 		F673BD9420200A1500C8B1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F673BD9320200A1500C8B1BA /* AppDelegate.swift */; };
 		F673BD9920200A1500C8B1BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F673BD9720200A1500C8B1BA /* Main.storyboard */; };
 		F673BD9B20200A1500C8B1BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F673BD9A20200A1500C8B1BA /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		1E01E1F287C77B0D8D8A81BD /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		1EE932A77C0B235296BBEA60 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD7314EDEEB21B8C8134E4E /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
+		F639EA792026B7D10096A679 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F673BD9020200A1500C8B1BA /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F673BD9320200A1500C8B1BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F673BD9820200A1500C8B1BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F639EA782026B7BD0096A679 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F639EA792026B7D10096A679 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		F673BD8720200A1500C8B1BA = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		F673BD9220200A1500C8B1BA /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				F639EA782026B7BD0096A679 /* Services */,
 				F673BDB32022BE4D00C8B1BA /* Utilities */,
 				F673BDAC202013E500C8B1BA /* Model */,
 				F673BDAB202013DD00C8B1BA /* View */,
@@ -293,6 +304,7 @@
 				F673BDAE2020140700C8B1BA /* ChatVC.swift in Sources */,
 				F673BDB22022B60200C8B1BA /* GradientView.swift in Sources */,
 				F673BD9420200A1500C8B1BA /* AppDelegate.swift in Sources */,
+				F639EA7A2026B7D10096A679 /* AuthService.swift in Sources */,
 				F673BDA92020114400C8B1BA /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
