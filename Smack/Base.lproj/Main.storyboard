@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -24,6 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="R78-TS-uDK"/>
                     </view>
                     <connections>
                         <segue destination="O6R-QI-yzx" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="rl8-bj-GsO"/>
@@ -76,6 +78,7 @@
                             <constraint firstItem="POc-Wa-SBS" firstAttribute="top" secondItem="rtq-LU-f7O" secondAttribute="top" id="Te2-0Z-Rg4"/>
                             <constraint firstAttribute="trailing" secondItem="POc-Wa-SBS" secondAttribute="trailing" id="hsm-dp-yjQ"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="hFG-As-OAF"/>
                     </view>
                     <connections>
                         <outlet property="menuBtn" destination="Rvy-cl-sW0" id="Q61-qI-tIj"/>
@@ -171,6 +174,7 @@
                             <constraint firstItem="CHP-49-HWP" firstAttribute="leading" secondItem="icy-ZA-Rgx" secondAttribute="leading" id="sF9-Il-EpC"/>
                             <constraint firstAttribute="bottomMargin" secondItem="AWH-0p-fm1" secondAttribute="bottom" constant="20" id="yDL-Gw-ckK"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6hh-PG-r8f"/>
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="Lqp-3f-Pp6" id="Qfc-Ww-oHh"/>
@@ -264,7 +268,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RS-Zp-gtL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RS-Zp-gtL" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62" y="266" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -275,6 +279,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -290,6 +299,7 @@
                             <constraint firstItem="W6T-Mq-sDc" firstAttribute="centerX" secondItem="nB5-f3-6xY" secondAttribute="centerX" id="vYk-Q9-6lm"/>
                             <constraint firstItem="4RS-Zp-gtL" firstAttribute="centerX" secondItem="nB5-f3-6xY" secondAttribute="centerX" id="yCC-0j-crG"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="pzH-B3-2cV"/>
                     </view>
                     <connections>
                         <segue destination="BCW-RJ-O8o" kind="show" identifier="toCreateAccount" id="heH-i0-Oaf"/>
@@ -321,7 +331,7 @@
                                     <action selector="closePressed:" destination="BCW-RJ-O8o" eventType="touchUpInside" id="JyD-6O-nWJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bni-F7-D31">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bni-F7-D31" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -332,6 +342,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="BCW-RJ-O8o" eventType="touchUpInside" id="ANH-jw-7tS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQ5-bc-vNj">
                                 <rect key="frame" x="137.5" y="279" width="100" height="130"/>
@@ -344,6 +362,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="VbB-Bz-zJI" eventType="touchUpInside" id="Ubh-vu-FlZ"/>
+                                    <action selector="pickAvatarPressed:" destination="BCW-RJ-O8o" eventType="touchUpInside" id="Bbh-9I-4Xz"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ro7-Cu-niV">
@@ -418,6 +437,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="VbB-Bz-zJI" eventType="touchUpInside" id="WIk-gq-UKG"/>
+                                    <action selector="pickBGColorPressed:" destination="BCW-RJ-O8o" eventType="touchUpInside" id="fyG-1A-R2A"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -439,8 +459,13 @@
                             <constraint firstItem="5Mw-sF-UjH" firstAttribute="top" secondItem="ro7-Cu-niV" secondAttribute="bottom" constant="40" id="sZ0-lv-lOj"/>
                             <constraint firstItem="hwW-n9-fIK" firstAttribute="trailing" secondItem="r8i-48-Ufl" secondAttribute="trailingMargin" id="v21-x6-Y7D"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="LXe-4F-1Dp"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="EkE-eS-Hvu" id="G1V-YB-LLI"/>
+                        <outlet property="passTxt" destination="Fge-4H-RyG" id="fi1-Gz-jXZ"/>
+                        <outlet property="userImg" destination="5Mw-sF-UjH" id="opi-ct-jeo"/>
+                        <outlet property="usernameTxt" destination="Lug-WK-dcQ" id="PKY-ik-bqs"/>
                         <segue destination="iPg-vd-Z1e" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="eqq-Yz-ocW"/>
                     </connections>
                 </viewController>
