@@ -20,6 +20,7 @@
 		F673BDB72022C1F500C8B1BA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F673BDB62022C1F500C8B1BA /* LoginVC.swift */; };
 		F673BDB920240AE400C8B1BA /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F673BDB820240AE400C8B1BA /* CreateAccountVC.swift */; };
 		F699F2382026C1D600334F08 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F699F2372026C1D600334F08 /* RoundedButton.swift */; };
+		F699F23A2027E74000334F08 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F699F2392027E74000334F08 /* UserDataService.swift */; };
 		FB0D64B332DE74F865A8300A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE932A77C0B235296BBEA60 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		F673BDB62022C1F500C8B1BA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F673BDB820240AE400C8B1BA /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		F699F2372026C1D600334F08 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		F699F2392027E74000334F08 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F639EA792026B7D10096A679 /* AuthService.swift */,
+				F699F2392027E74000334F08 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				F673BDB02020141700C8B1BA /* ChannelVC.swift in Sources */,
 				F699F2382026C1D600334F08 /* RoundedButton.swift in Sources */,
 				F673BDB52022BE5E00C8B1BA /* Constants.swift in Sources */,
+				F699F23A2027E74000334F08 /* UserDataService.swift in Sources */,
 				F673BDB920240AE400C8B1BA /* CreateAccountVC.swift in Sources */,
 				F673BDB72022C1F500C8B1BA /* LoginVC.swift in Sources */,
 				F673BDAE2020140700C8B1BA /* ChatVC.swift in Sources */,
