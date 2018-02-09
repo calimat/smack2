@@ -28,6 +28,7 @@
 		F699F23A2027E74000334F08 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F699F2392027E74000334F08 /* UserDataService.swift */; };
 		F699F23C2027F0A900334F08 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F699F23B2027F0A900334F08 /* AvatarPickerVC.swift */; };
 		F699F23E2027F1EF00334F08 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F699F23D2027F1EF00334F08 /* AvatarCell.swift */; };
+		F6F874A2202D505A008F0FA6 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A1202D505A008F0FA6 /* ChannelCell.swift */; };
 		FB0D64B332DE74F865A8300A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE932A77C0B235296BBEA60 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		F699F2392027E74000334F08 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		F699F23B2027F0A900334F08 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		F699F23D2027F1EF00334F08 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		F6F874A1202D505A008F0FA6 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				F699F2372026C1D600334F08 /* RoundedButton.swift */,
 				F699F23D2027F1EF00334F08 /* AvatarCell.swift */,
 				F6851E4A20294DF200D23831 /* CircleImage.swift */,
+				F6F874A1202D505A008F0FA6 /* ChannelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6851E4E202A9E7D00D23831 /* ProfileVC.swift in Sources */,
+				F6F874A2202D505A008F0FA6 /* ChannelCell.swift in Sources */,
 				F673BDB02020141700C8B1BA /* ChannelVC.swift in Sources */,
 				F699F23C2027F0A900334F08 /* AvatarPickerVC.swift in Sources */,
 				F699F2382026C1D600334F08 /* RoundedButton.swift in Sources */,
