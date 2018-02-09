@@ -31,6 +31,7 @@
 		F6F874A2202D505A008F0FA6 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A1202D505A008F0FA6 /* ChannelCell.swift */; };
 		F6F874A5202D5501008F0FA6 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A3202D5501008F0FA6 /* AddChannelVC.swift */; };
 		F6F874A6202D5501008F0FA6 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F874A4202D5501008F0FA6 /* AddChannelVC.xib */; };
+		F6F874A8202D5C12008F0FA6 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A7202D5C12008F0FA6 /* SocketService.swift */; };
 		FB0D64B332DE74F865A8300A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE932A77C0B235296BBEA60 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		F6F874A1202D505A008F0FA6 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		F6F874A3202D5501008F0FA6 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		F6F874A4202D5501008F0FA6 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		F6F874A7202D5C12008F0FA6 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F639EA792026B7D10096A679 /* AuthService.swift */,
 				F699F2392027E74000334F08 /* UserDataService.swift */,
 				F6851E51202AB7D000D23831 /* MessageService.swift */,
+				F6F874A7202D5C12008F0FA6 /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F874A8202D5C12008F0FA6 /* SocketService.swift in Sources */,
 				F6851E4E202A9E7D00D23831 /* ProfileVC.swift in Sources */,
 				F6F874A2202D505A008F0FA6 /* ChannelCell.swift in Sources */,
 				F673BDB02020141700C8B1BA /* ChannelVC.swift in Sources */,
