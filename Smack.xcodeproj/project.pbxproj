@@ -33,6 +33,7 @@
 		F6F874A6202D5501008F0FA6 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F874A4202D5501008F0FA6 /* AddChannelVC.xib */; };
 		F6F874A8202D5C12008F0FA6 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A7202D5C12008F0FA6 /* SocketService.swift */; };
 		F6F874AA202E9808008F0FA6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A9202E9808008F0FA6 /* Message.swift */; };
+		F6F874AC202EA197008F0FA6 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874AB202EA197008F0FA6 /* KeyboardBoundView.swift */; };
 		FB0D64B332DE74F865A8300A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE932A77C0B235296BBEA60 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		F6F874A4202D5501008F0FA6 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		F6F874A7202D5C12008F0FA6 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		F6F874A9202E9808008F0FA6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F6F874AB202EA197008F0FA6 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				F699F23D2027F1EF00334F08 /* AvatarCell.swift */,
 				F6851E4A20294DF200D23831 /* CircleImage.swift */,
 				F6F874A1202D505A008F0FA6 /* ChannelCell.swift */,
+				F6F874AB202EA197008F0FA6 /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F874AC202EA197008F0FA6 /* KeyboardBoundView.swift in Sources */,
 				F6F874A8202D5C12008F0FA6 /* SocketService.swift in Sources */,
 				F6851E4E202A9E7D00D23831 /* ProfileVC.swift in Sources */,
 				F6F874A2202D505A008F0FA6 /* ChannelCell.swift in Sources */,
