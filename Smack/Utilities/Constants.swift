@@ -24,7 +24,8 @@ let smackPurplerPlaceholder = #colorLiteral(red: 0.3266413212, green: 0.42152011
 
 //Notification constants
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
-
+let NOTIF_CHANNELS_LOADED = Notification.Name("channelsLoaded")
+let NOTIF_CHANNELS_SELECTED = Notification.Name("channelSelected")
 //Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
