@@ -34,6 +34,7 @@
 		F6F874A8202D5C12008F0FA6 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A7202D5C12008F0FA6 /* SocketService.swift */; };
 		F6F874AA202E9808008F0FA6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A9202E9808008F0FA6 /* Message.swift */; };
 		F6F874AC202EA197008F0FA6 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874AB202EA197008F0FA6 /* KeyboardBoundView.swift */; };
+		F6F874AE202EA3A7008F0FA6 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874AD202EA3A7008F0FA6 /* MessageCell.swift */; };
 		FB0D64B332DE74F865A8300A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE932A77C0B235296BBEA60 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		F6F874A7202D5C12008F0FA6 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		F6F874A9202E9808008F0FA6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		F6F874AB202EA197008F0FA6 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		F6F874AD202EA3A7008F0FA6 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				F6851E4A20294DF200D23831 /* CircleImage.swift */,
 				F6F874A1202D505A008F0FA6 /* ChannelCell.swift */,
 				F6F874AB202EA197008F0FA6 /* KeyboardBoundView.swift */,
+				F6F874AD202EA3A7008F0FA6 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				F6F874A2202D505A008F0FA6 /* ChannelCell.swift in Sources */,
 				F673BDB02020141700C8B1BA /* ChannelVC.swift in Sources */,
 				F699F23C2027F0A900334F08 /* AvatarPickerVC.swift in Sources */,
+				F6F874AE202EA3A7008F0FA6 /* MessageCell.swift in Sources */,
 				F699F2382026C1D600334F08 /* RoundedButton.swift in Sources */,
 				F6F874AA202E9808008F0FA6 /* Message.swift in Sources */,
 				F6851E54202AB80000D23831 /* Channel.swift in Sources */,
