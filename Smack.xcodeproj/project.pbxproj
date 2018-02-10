@@ -32,6 +32,7 @@
 		F6F874A5202D5501008F0FA6 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A3202D5501008F0FA6 /* AddChannelVC.swift */; };
 		F6F874A6202D5501008F0FA6 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6F874A4202D5501008F0FA6 /* AddChannelVC.xib */; };
 		F6F874A8202D5C12008F0FA6 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A7202D5C12008F0FA6 /* SocketService.swift */; };
+		F6F874AA202E9808008F0FA6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F874A9202E9808008F0FA6 /* Message.swift */; };
 		FB0D64B332DE74F865A8300A /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE932A77C0B235296BBEA60 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		F6F874A3202D5501008F0FA6 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		F6F874A4202D5501008F0FA6 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		F6F874A7202D5C12008F0FA6 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		F6F874A9202E9808008F0FA6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				F6851E53202AB80000D23831 /* Channel.swift */,
+				F6F874A9202E9808008F0FA6 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				F673BDB02020141700C8B1BA /* ChannelVC.swift in Sources */,
 				F699F23C2027F0A900334F08 /* AvatarPickerVC.swift in Sources */,
 				F699F2382026C1D600334F08 /* RoundedButton.swift in Sources */,
+				F6F874AA202E9808008F0FA6 /* Message.swift in Sources */,
 				F6851E54202AB80000D23831 /* Channel.swift in Sources */,
 				F6851E4B20294DF200D23831 /* CircleImage.swift in Sources */,
 				F6851E52202AB7D000D23831 /* MessageService.swift in Sources */,
