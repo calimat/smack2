@@ -26,24 +26,20 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.bindToKeyboard()
-        
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
-        
-        sendBtn.isHidden = true 
+        sendBtn.isHidden = true
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
         view.addGestureRecognizer(tap)
-        
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
-        
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.channelSelected(_:)), name: NOTIF_CHANNELS_SELECTED, object: nil)
         
         SocketService.instance.getChatMessage { (newMessage) in
@@ -51,23 +47,11 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 MessageService.instance.messages.append(newMessage)
                 self.tableView.reloadData()
                 if MessageService.instance.messages.count > 0 {
-                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1 , section: 0)
+                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
                     self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
-                    
                 }
             }
         }
-        
-        
-//        SocketService.instance.getChatMessage { (success) in
-//            if success {
-//                self.tableView.reloadData()
-//                if MessageService.instance.messages.count > 0 {
-//                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
-//                    self.tableView.scrollToRow(at: endIndex, at: .bottom , animated: false)
-//                }
-//            }
-//        }
         
         SocketService.instance.getTypingUsers { (typingUsers) in
             guard let channelId = MessageService.instance.selectedChannel?.id else { return }
@@ -85,7 +69,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 }
             }
             
-            if numberOfTypers > 0 && AuthService.instance.isLoggedIn {
+            if numberOfTypers > 0 && AuthService.instance.isLoggedIn == true {
                 var verb = "is"
                 if numberOfTypers > 1 {
                     verb = "are"
@@ -94,18 +78,14 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             } else {
                 self.typingUsersLbl.text = ""
             }
-            
         }
         
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail(completion: { (success) in
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
-                
             })
         }
-        
     }
-
     @objc func handleTap() {
         view.endEditing(true)
     }
@@ -147,20 +127,18 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBAction func messageBoxEditing(_ sender: Any) {
         guard let channelId = MessageService.instance.selectedChannel?.id else { return }
-        
         if messageTxtBox.text == "" {
             isTyping = false
             sendBtn.isHidden = true
-            SocketService.instance.socket.emit("stopType", UserDataService.instance.name, channelId )
+            SocketService.instance.socket.emit("stopType", UserDataService.instance.name, channelId)
         } else {
             if isTyping == false {
                 sendBtn.isHidden = false
-               SocketService.instance.socket.emit("startType", UserDataService.instance.name, channelId)
+                SocketService.instance.socket.emit("startType", UserDataService.instance.name, channelId)
             }
-             isTyping = true
+            isTyping = true
         }
     }
-    
     
     
     func onLoginGetMessages() {
@@ -203,6 +181,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("Messages counted: \(MessageService.instance.messages.count)")
         return MessageService.instance.messages.count
     }
 
