@@ -30,6 +30,7 @@ class UserDataService {
         self.avatarName = avatarName
     }
     
+    
     func returnUIColor(components:String) -> UIColor {
         let scanner = Scanner(string: components)
         let skipped = CharacterSet(charactersIn: "[], ")
@@ -60,6 +61,8 @@ class UserDataService {
         return newUIColor
         
     }
+    
+    
     
     func logoutUser() {
         id = ""

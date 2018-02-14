@@ -102,7 +102,7 @@ class AuthService {
     
     func createUser(name:String, email:String, avatarName:String, avatarColor:String, completion: @escaping CompletionHandler) {
         
-       let lowerCaseEmail = email.lowercased()
+        let lowerCaseEmail = email.lowercased()
         
         let body: [String: Any] = [
             "name": name,
@@ -144,6 +144,40 @@ class AuthService {
             }
         }
         
+    }
+    
+    
+    func changeUserName(newUserName: String , completion: @escaping CompletionHandler) {
+        
+        let avatarColor = UserDataService.instance.avatarColor
+        let avatarName = UserDataService.instance.avatarName
+        let email = UserDataService.instance.email
+        let lowerCaseEmail = email.lowercased()
+        
+        let body: [String: Any] = [
+            "name": newUserName,
+            "email": lowerCaseEmail,
+            "avatarName": avatarName,
+            "avatarColor": avatarColor
+        ]
+        
+        let url = "\(URL_CHANGE_USERNAME)\(UserDataService.instance.id)"
+        print("Url is \(url)")
+        print("Bearer\(BEARER_HEADER)" )
+        
+        Alamofire.request(url, method: .put, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            
+            if response.result.error == nil {
+                
+                
+                completion(true)
+                
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+
+            }
+        }
     }
     
     func setUserInfo(data: Data) {

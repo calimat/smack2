@@ -44,4 +44,19 @@ class ProfileVC: UIViewController {
     @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func changeUserNamePressed(_ sender: Any) {
+        
+        if AuthService.instance.isLoggedIn {
+            //Show change username page
+            let profile = ChangeUserNameVC()
+            profile.modalPresentationStyle = .custom
+            present(profile, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        }
+        
+    }
+    
+    
 }
